@@ -6,7 +6,7 @@ class Curacmd < Formula
   sha256 "fc193815e3a392c36480dabc2a8e0ad959db10b939b56fa442a9a57740ce9bc0"
 
   def install
-    prefix.install [ "lib", "cookbooks", "etc", "var", "data" ]
+    prefix.install [ "lib", "cookbooks", "etc", "var", "data", "Gemfile" ]
     bin.install "bin/curacmd"
   end
 
