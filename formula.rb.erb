@@ -1,0 +1,14 @@
+class <%= class_name %> < Formula
+
+  desc "<%= description %>"
+  homepage "<%= homepage %>"
+  url "<%= url_prefix %>/<%= version %>.tar.gz"
+  version "<%= version %>"
+  sha256 "<%= sha %>"
+
+  def install
+    prefix.install [ "lib", "cookbooks", "etc", "var", "data", "Gemfile" ]
+    bin.install [ "bin/curacmd", "bin/curacmd_setup.sh" ]
+  end
+
+end
