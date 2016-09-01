@@ -1,13 +1,17 @@
 class Curacmd < Formula
-  desc "Curalate Laptop Buildy Stuff"
+
+  desc "Curalate Laptop Management Stuff"
   homepage "https://github.com/curalate/curacmd"
-  url "https://github.com/curalate/curacmd/archive/0.1.5.tar.gz"
-  version "0.1.5"
-  sha256 "9baa7742627a73105f429244e3f7874471157d57cc593dea3bb8ddfb171301ae"
+  url "https://github.com/curalate/curacmd/archive/20160901155330.tar.gz"
+  version "20160901155330"
+  sha256 "97138ae643ffb9f0c501e0e8b4d10aba9473f7193f6a0bcc4931685b05ab067f"
 
   def install
+
     prefix.install [ "lib", "cookbooks", "etc", "var", "data", "Gemfile" ]
+
     bin.install [ "bin/curacmd", "bin/curacmd_setup.sh" ]
+
   end
 
 end
