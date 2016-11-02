@@ -2,9 +2,9 @@ class Curacmd < Formula
 
   desc "Curalate Laptop Management Stuff"
   homepage "https://github.com/curalate/curacmd"
-  url "https://github.com/curalate/curacmd/archive/20161102161539.tar.gz"
-  version "20161102161539"
-  sha256 "eaf7f7360ed101cc0bde08e20b789ad191f97a87c30e11120816fd7854a0d115"
+  url "https://github.com/curalate/curacmd/archive/20161102161814.tar.gz"
+  version "20161102161814"
+  sha256 "dffc609b112f04bd50ddbf79375e81c0982dad4d1f72a2bc25828ff47bb6ac34"
 
   def install
 
