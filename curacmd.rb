@@ -10,7 +10,7 @@ class Curacmd < Formula
 
     prefix.install [ "Gemfile", "bin", "commands", "lib" ]
 
-    bin.install [ "bin/curacmd", "bin/curacmd_setup.sh" ]
+    bin.install Dir["bin/*"]
 
   end
 
