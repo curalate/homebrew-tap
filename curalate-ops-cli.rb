@@ -1,4 +1,4 @@
-class CuralateOpsCLI < Formula
+class CuralateOpsCli < Formula
 
   desc "Curalate Ops Jobs CLI"
   homepage "https://github.com/curalate/curalate-ops-cli"
