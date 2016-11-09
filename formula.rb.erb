@@ -13,7 +13,7 @@ class <%= class_name %> < Formula
   end
 
   <% depends_on.each do |d| %>
-    depends_on <%= d.chomp %>
+    <%= d.chomp %>
   <% end %>
 
 end
