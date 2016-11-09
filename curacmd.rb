@@ -2,9 +2,9 @@ class Curacmd < Formula
 
   desc "Curalate Laptop Management Stuff"
   homepage "https://github.com/curalate/curacmd"
-  url "https://github.com/curalate/curacmd/archive/20161102174156.tar.gz"
-  version "20161102174156"
-  sha256 "55c31ee96ecf74f86047163060f3f3885a532b8a17baf2af77cbce2a1b39cd1f"
+  url "https://github.com/curalate/curacmd/archive/20161109150516.tar.gz"
+  version "20161109150516"
+  sha256 "0c4da2fbbffe459b3568535db639aea6e81f428a0ed2e785ec7de36f9616e2c4"
 
   def install
 
@@ -13,5 +13,9 @@ class Curacmd < Formula
     bin.install [ "bin/curacmd" ]
 
   end
+
+  
+    depends_on curalate-ops-cli
+  
 
 end
