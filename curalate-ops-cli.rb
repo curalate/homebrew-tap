@@ -2,9 +2,9 @@ class CuralateOpsCli < Formula
 
   desc "Curalate Ops Jobs CLI"
   homepage "https://github.com/curalate/curalate-ops-cli"
-  url "https://github.com/bchen421/curalate-ops-cli/archive/0.0.3.tar.gz"
+  url "https://github.com/timothyhahn/curalate-ops-cli/archive/0.0.4.tar.gz"
   version "0.0.3"
-  sha256 "b1db8c8f0f248eb84dd3a168eaa6894742c800e4c8541d772ce88926a58f58a9"
+  sha256 "df72cc30468ba0eb4e061a84e2b12b53bc8589743b2de96c87bc05febad9eec1"
 
   def install
 
