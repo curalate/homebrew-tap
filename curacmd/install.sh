@@ -116,7 +116,7 @@ validate_curacmd_install() {
     exit 1
   else
     echo "Installation of curacmd complete!"
-    echo "You can now run \"curacmd --configure\" to get started"
+    echo "You can now run \"curacmd configure\" to get started"
     exit 0
   fi
 }
