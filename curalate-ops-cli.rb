@@ -9,7 +9,7 @@ class CuralateOpsCli < Formula
   def install
 
     prefix.install [ "brew/lib", "brew/include", "brew/.Python", "brew/pip-selfcheck.json", "brew/bin/python", "brew/bin/ops" ]
-    prefix.install Dir["brew/bin/*"]
+    bin.install Dir["brew/bin/*"]
 
 
   end
