@@ -8,8 +8,7 @@ class CuralateOpsCli < Formula
 
   def install
 
-    prefix.install [ "brew/lib", "brew/include", "brew/.Python", "brew/pip-selfcheck.json", "brew/bin/python" ]
-    prefix.install_symlink ["brew/bin"]
+    prefix.install [ "brew/lib", "brew/include", "brew/.Python", "brew/pip-selfcheck.json", "brew/bin/python", "brew/bin/ops" ]
 
 
   end
