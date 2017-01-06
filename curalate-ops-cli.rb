@@ -4,7 +4,7 @@ class CuralateOpsCli < Formula
   homepage "https://github.com/curalate/curalate-ops-cli"
   url "https://github.com/curalate/curalate-ops-cli/archive/0.0.17.tar.gz"
   version "0.0.17"
-  sha256 "8651a14adaa0ebb8d5987c73afe02a369bfff5e1e4afd04a5e4f5bd71f1814f8"
+  sha256 "741457ac986f96aa229f30bed35a62b275bbaf0b0b63a3af585ebb7bddba5f69"
 
   def install
 
