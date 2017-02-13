@@ -101,6 +101,11 @@ create_new_curlrc() {
   echo "Created ~/.curlrc with a \"--netrc\" entry"
 }
 
+brew_install_ruby() {
+  echo "Using brew to install Ruby..."
+  brew install ruby
+}
+
 tap_and_install_curacmd() {
   echo "Adding our internal Homebrew Tap..."
   brew tap curalate/tap
@@ -142,6 +147,10 @@ check_netrc_file_exists
 # Check if a ~/.curlrc exists, if not create one with a --netrc flag
 echo ""
 check_curlrc_file_exists
+
+# We need to install Ruby via brew next
+echo ""
+brew_install_ruby
 
 # Now that brew, curlrc and netrc should be all set, let's tap our curalate repo
 echo ""
