@@ -104,6 +104,7 @@ create_new_curlrc() {
 brew_install_ruby() {
   echo "Using brew to install Ruby..."
   brew install ruby
+  gem install colorize
 }
 
 tap_and_install_curacmd() {
