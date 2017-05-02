@@ -107,6 +107,11 @@ brew_install_ruby() {
   gem install colorize
 }
 
+brew_install_chefdk() {
+  echo "Using brew to install the ChefDK..."
+  brew cask install chefdk
+}
+
 tap_and_install_curacmd() {
   echo "Adding our internal Homebrew Tap..."
   brew tap curalate/tap
@@ -152,6 +157,10 @@ check_curlrc_file_exists
 # We need to install Ruby via brew next
 echo ""
 brew_install_ruby
+
+# We need to install the ChefDK via brew
+echo ""
+brew_install_chefdk
 
 # Now that brew, curlrc and netrc should be all set, let's tap our curalate repo
 echo ""
