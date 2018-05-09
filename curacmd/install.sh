@@ -16,6 +16,19 @@ check_brew_installed() {
   fi
 }
 
+check_brew_configuration() {
+    echo "Checking if Homebrew is configured correctly..."
+
+    if [ -z "$HOMEBREW_CURLRC" ]; then
+        printf "\E[38;0;31mERROR:\e[0m HOMEBREW_CURLRC environment variable not"
+        printf " found. Please export this variable in your shell's configuration"
+        printf " file (e.g. ~/.bash_profile) and check the wiki for more information."
+        printf " Note that you may need to \`source ~/.bash_profile\` prior to"
+        printf " running this command again.\n"
+        exit 1
+    fi
+}
+
 check_git_token_file_exists() {
   echo "Checking if you have a git access token at ~/.git-access-token"
   
@@ -143,9 +156,13 @@ validate_curacmd_install() {
 echo ""
 hello_message
 
-# Checking if HomeBrew is installed
+# Checking if Homebrew is installed
 echo ""
 check_brew_installed
+
+# Check if Homebrew is configured correctly
+echo ""
+check_brew_configuration
 
 # Check if the user has setup a git access token
 echo ""
