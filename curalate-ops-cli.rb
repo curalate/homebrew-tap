@@ -7,9 +7,8 @@ class CuralateOpsCli < Formula
   sha256 "425d879b9e6b7bde036b1d88d2468f375ae42769bb3471428e388bfb0f73c338"
 
   def install
-
+    bin.install    [ "brew/bin/ops" ]
     prefix.install [ "brew" ]
-
   end
 
 end
